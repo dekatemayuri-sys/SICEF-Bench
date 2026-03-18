@@ -1,0 +1,52 @@
+{
+  "overall": [
+    {
+      "method": "Inactivity Threshold (IT)",
+      "P": 0.307,
+      "R": 0.926,
+      "F1": 0.462
+    },
+    {
+      "method": "TF-IDF Novelty",
+      "P": 0.331,
+      "R": 0.409,
+      "F1": 0.366
+    },
+    {
+      "method": "SN-Only",
+      "P": 0.331,
+      "R": 0.409,
+      "F1": 0.366
+    },
+    {
+      "method": "Ticket Health Only",
+      "P": 1.0,
+      "R": 0.004,
+      "F1": 0.009
+    },
+    {
+      "method": "SCP-A (Proposed)",
+      "P": 0.404,
+      "R": 0.783,
+      "F1": 0.533
+    }
+  ],
+  "edr": {
+    "IT": 0.563,
+    "SCP-A": 0.506
+  },
+  "params": {
+    "it_thresh": 12.0,
+    "tfidf_tau": 0.45,
+    "sn_tau": 0.45,
+    "th_tau": 0.45,
+    "scpa_tau": 0.3
+  },
+  "dataset": {
+    "total": 5000,
+    "train": 3500,
+    "val": 750,
+    "test": 750,
+    "test_stag_rate": 0.307
+  }
+}
